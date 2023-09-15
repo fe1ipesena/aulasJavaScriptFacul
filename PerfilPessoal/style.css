@@ -1,0 +1,55 @@
+* {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    }
+
+body {
+    background-color: black;
+    color: #F5F8FA;
+  }
+
+header {
+    margin: auto;
+    margin-top: 5px;
+    padding-top: 20px;
+    width: 100em;
+    height: 5em;
+    background-color: rgb(47, 51, 54);
+    color: #F5F8FA;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.hometown {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 50em;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #657786;
+}
+
+.hobbies {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 50em;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #657786;
+}
+
+.birthDate {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 50em;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #657786;
+}
+
+section .pfpicture {
+    justify-content: center;
+    height: 500px;
+    width: 500px;
+    border: 1px solid #657786;
+    border-radius: 450px;
+}

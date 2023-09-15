@@ -2,54 +2,126 @@
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    }
+    display: grid;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: gray;
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+a:link{
+    text-decoration: none;
+}
 
 body {
     background-color: black;
     color: #F5F8FA;
-  }
+}
 
 header {
+    display:block;
     margin: auto;
     margin-top: 5px;
     padding-top: 20px;
     width: 100em;
     height: 5em;
-    background-color: rgb(47, 51, 54);
     color: #F5F8FA;
-    border: 1px solid black;
-    border-radius: 30px;
+    border: 1px solid #657786;
     text-align: center;
 }
 
+.bground {
+    background-color: #23272b;
+    border-radius: 5px;
+    max-width: 40em;
+    padding: 10px;
+    margin: 0 0 0 0;
+}
+
+.bground:hover{
+    background-color: #30353b;
+}
+
+.containerHeader {
+    background-color: #23272b;
+    border-radius: 5px;
+    width: 80em;
+    margin: 0 0 150px 150px;
+    padding: 0px 30px 10px 30px;
+    /*
+    top margin is 25px
+    right margin is 50px
+    bottom margin is 75px
+    left margin is 100px*/
+}
+
 .hometown {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: 10px;
-    margin-right: 50em;
+    margin-right: 70em;
     padding: 10px 10px 10px 10px;
     border: 1px solid #657786;
 }
 
 .hobbies {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
-    margin-right: 50em;
+    margin-right: 70em;
     padding: 10px 10px 10px 10px;
     border: 1px solid #657786;
 }
 
 .birthDate {
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 10px;
-    margin-right: 50em;
+    margin-right: 70em;
     padding: 10px 10px 10px 10px;
     border: 1px solid #657786;
 }
 
-section .pfpicture {
-    justify-content: center;
-    height: 500px;
-    width: 500px;
+.pfpicture {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 180px;
+    width: 180px;
     border: 1px solid #657786;
-    border-radius: 450px;
+    border-radius: 130px;
+}
+
+.pfpictureBorder {
+    display: block;
+    margin-left: auto;
+    margin-right: 96em;
+    margin-bottom: 20px;
+    background-color: #23272b;
+    border: 1px solid #657786;
+    max-width: 40em;
+    padding: 10px;
+}
+
+.personInterests {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 70em;
+    padding: 10px 50px 10px 30px;
+    border: 1px solid #657786;
+}
+
+.personInterests .bground {
+    padding-left: 10px;
+    margin: 0 0 0 -20px;
+    max-width: 40em;
 }

@@ -1,0 +1,36 @@
+1 - Crie um objeto chamado carro com propriedades 
+como modelo, ano e cor;
+
+2 - Acesse e imprima a propriedade "ano" do objeto 
+carro criado anteriormente;
+
+3 - Adicione a propriedade "marca" ao objeto carro 
+e defina um valor;
+
+4 - Crie uma string JSON representando um livro e converta-a 
+para um objeto JavaScript;
+
+5 - Crie um objeto representando uma fruta e converta-o para 
+uma string JSON;
+
+6 - Crie dois objetos, aluno1 e aluno2, ambos com propriedades 
+como nome e notas. Em seguida, calcule e imprima a média das;
+
+7 - Crie um objeto com propriedades aninhadas e converta-o para 
+uma string JSON;
+
+8 - Crie um objeto representando uma lista de tarefas. Use um loop 
+para imprimir cada tarefa e seu status (concluída/não concluída);
+
+9 - Crie uma função que realize uma cópia profunda de um objeto, 
+incluindo objetos aninhados;
+
+10 - Crie uma função que recebe um array de objetos e uma chave, e 
+retorna um novo array contendo apenas os objetos que possuem a chave 
+especificada;
+
+Desafio: Crie três objetos (pessoa1, pessoa2 e pessoa3), cada objeto 
+representa uma pessoa com nome, idade e profissão, adicione esses três 
+objetos em um array e faça uma tabela em html para imprimir este array. 
+Gere a tabela dinamicamente em uma função e injete o html gerado na 
+função utilizando document.body.innerHTML;

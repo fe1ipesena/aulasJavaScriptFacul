@@ -1,0 +1,43 @@
+1 - Tipos de Funções
+
+Crie uma função declarada que receba um array de inteiros e retorna um array contendo os números pares
+Crie uma função anônima que receba um array de inteiros e retorna um array contendo apenas os números ímpares deste array.
+Crie uma função recursiva que receba N e retorne o resultado fatorial deste número
+
+
+2 - Métodos de arrays
+
+Utilizando map, crie um novo array que contenha cada elemento do array original multiplicado por 2.
+Utilizando filter, crie um novo array que contenha apenas os números pares do array original.
+Utilizando find, encontre o primeiro elemento do array original que seja maior que 5.
+Utilizando indexOf, encontre o índice do elemento 4 no array.
+Utilizando fill, crie um novo array com 5 elementos, todos preenchidos com o valor 0.
+Utilizando some, verifique se há pelo menos um número par no array.
+Utilizando every, verifique se todos os elementos do array são menores que 10.
+
+
+3 - Manipulando HTML
+
+Altere o conteúdo do html a seguir de "Olá" para "Tchau":
+
+<h1 id="idTexto" class="clasText">Olá</h1>
+Utilizando getElement
+Utilizando getElementById
+Utilizando getElementsByClassName
+
+Utilize a função appendChild() para inserir uma div dentro de outr div.
+
+
+4 - String template
+
+Faça uma função que receba 2 parâmetros, nome e idade e retorne uma string com o texto "Olá, meu nome é ${nome} e tenho {idade} anos."
+
+
+5 - Listeners
+
+Faça um botão em HTML e adicione um listener (js) que ao usuário clicar no botão execute uma função que dê um alert com o texto: "Olá, estou usando um listener onclick"
+6 - CSS
+
+Utilizando apenas uma tag HTML, faça um css que altere a cor do body
+Faça um arquivo .css e inclua ele em um arquivo html, aplicando algum estilo de sua preferência
+ 

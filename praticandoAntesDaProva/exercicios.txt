@@ -20,7 +20,7 @@ Utilizando every, verifique se todos os elementos do array são menores que 10.
 
 Altere o conteúdo do html a seguir de "Olá" para "Tchau":
 
-<h1 id="idTexto" class="clasText">Olá</h1>
+<h1 id="idTexto" class="classText">Olá</h1>
 Utilizando getElement
 Utilizando getElementById
 Utilizando getElementsByClassName

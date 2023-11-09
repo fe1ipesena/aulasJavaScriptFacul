@@ -1,0 +1,10 @@
+Utilizando a função setTimeout
+
+1 - Crie uma função assíncrona que retorne uma mensagem de "Olá, Mundo!" após um atraso de 2 segundos. Exiba a mensagem no console.
+
+Antes de executar essa função criada, imprima "Chamando uma função assíncrona", e depois da chamada imprima "Fim" 
+Observação: É importante observar e entender o comportamento das chamadas em suas sequências.
+
+2 - Crie uma função que conte de 1 a 5, com intervalos de 1 segundo entre cada número. Após contar até 5, exiba "Contagem concluída!" no console.
+
+3 - Crie uma função que exiba uma contagem regressiva de 10 a 1, com um intervalo de 1 segundo entre cada número. Após a contagem regressiva, exiba "Foguete lançado!" no console.

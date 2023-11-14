@@ -1,0 +1,12 @@
+1 - Crie uma função chamada somaAssincrona que aceita dois números e um callback. A função deve simular uma operação assíncrona de soma e chamar o callback com o resultado após um breve atraso.
+
+2 - Crie uma função chamada processarNomes que aceita uma lista de nomes e um callback. A função deve chamar o callback, passando uma nova lista contendo os nomes convertidos para maiúsculas.
+
+3 - Crie uma função chamada filtrarPares que aceita uma lista de números e um callback. A função deve chamar o callback, passando uma nova lista contendo apenas os números pares.
+
+4 - Crie uma calculadora assíncrona que aceite dois números e um operador, e use callbacks para realizar operações como soma, subtração, multiplicação e divisão.
+
+5 - Crie uma função que simule a leitura assíncrona de um arquivo. A função deve aceitar o caminho do arquivo e um callback que será chamado com o conteúdo do arquivo.
+
+6 - Utilizando alguma api de sua preferência, faça uma chamada, processe o dado se necessário e apresente em HTML o feito.
+(Dica: https://publicapis.dev/)

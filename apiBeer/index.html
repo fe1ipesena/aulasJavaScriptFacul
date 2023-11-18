@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boteco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Boteco</h1>
+    </header>
+
+    <div class="beerList">
+        <label for="itemsPerPage">Itens por página:</label>
+        <select id="itemsPerPage">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Cerveja 1</td>
+                    <td>Descrição da Cerveja 1</td>
+                </tr>
+                <tr>
+                    <td>Cerveja 2</td>
+                    <td>Descrição da Cerveja 2</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <footer>
+    <div class="changePage">
+        <button id="previousPage" onclick="previousPage()">Página Anterior</button>
+        <button id="nextPage" onclick="nextPage()">Próxima Página</button>
+    </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

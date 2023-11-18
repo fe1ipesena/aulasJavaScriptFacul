@@ -1,0 +1,61 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+    height: 80px;
+    background-color: yellow;
+}
+
+header h1 {
+    line-height: 80px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; 
+}
+
+.nmbrOfBeers {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nmbrOfBeers #beers {
+    width: 50px;
+}
+
+.beerList {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #f0f0f0; 
+    padding: 10px; 
+}
+
+table,
+td {
+    border: 1px solid #333;
+    padding: 5px; 
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+footer {
+    justify-content: flex-end;   
+    text-align: center;
+    height: 80px;
+    background-color: yellow;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+}
+
+.changePage button {
+    border-radius: 10px; 
+    padding: 5px;
+    margin: 10px;
+
+}

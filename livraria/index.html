@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+</head>
+
+<body>
+
+    <h1>Biblioteca</h1>
+
+    <script>
+        class EntidadeBibliografica {
+            constructor(titulo, autor, anoPublicacao, codigo) {
+                this.titulo = titulo;
+                this.autor = autor;
+                this.anoPublicacao = anoPublicacao;
+                this.codigo = codigo;
+                this.emprestado = false;
+                this.usuarioEmprestimo = null;
+            }
+
+            emprestar(usuario) {
+                if (!this.emprestado) {
+                    this.emprestado = true;
+                    this.usuarioEmprestimo = usuario;
+                    console.log(`${this.titulo} foi emprestado para ${usuario.nome}.`);
+                } else {
+                    console.log(`${this.titulo} já está emprestado.`);
+                }
+            }
+
+            devolver() {
+                if (this.emprestado) {
+                    this.emprestado = false;
+                    this.usuarioEmprestimo = null;
+                    console.log(`${this.titulo} foi devolvido.`);
+                } else {
+                    console.log(`${this.titulo} não está emprestado no momento.`);
+                }
+            }
+        }
+
+        class Livro extends EntidadeBibliografica {
+            constructor(titulo, autor, anoPublicacao, codigo, genero) {
+                super(titulo, autor, anoPublicacao, codigo);
+                this.genero = genero;
+            }
+        }
+
+        class Revista extends EntidadeBibliografica {
+            constructor(titulo, editora, anoPublicacao, codigo, edicao) {
+                super(titulo, editora, anoPublicacao, codigo);
+                this.edicao = edicao;
+            }
+
+            informacoes() {
+                return `Revista - Título: ${this.titulo}, Autor: ${this.autor}, Ano de Publicação: ${this.anoPublicacao}, Edição: ${this.edicao}`;
+            }
+        }
+
+        class Usuario {
+            constructor(nome, registroAcademico, dataNascimento) {
+                this.nome = nome;
+                this.registroAcademico = registroAcademico;
+                this.dataNascimento = dataNascimento;
+            }
+        }
+
+        class Biblioteca {
+            constructor() {
+                this.acervo = [];
+                this.usuarios = [];
+            }
+
+            adicionarItem(item) {
+                this.acervo.push(item);
+                console.log(`${item.titulo} foi adicionado ao acervo.`);
+            }
+
+            listarAcervo() {
+                console.log("Acervo da Biblioteca:");
+                this.acervo.forEach(item => console.log(`${item.codigo}: ${item.titulo}`));
+            }
+
+            adicionarUsuario(usuario) {
+                this.usuarios.push(usuario);
+                console.log(`${usuario.nome} foi adicionado como usuário.`);
+            }
+
+            emprestarItem(codigo, registroAcademico) {
+                const item = this.acervo.find(item => item.codigo === codigo);
+                const usuario = this.usuarios.find(user => user.registroAcademico === registroAcademico);
+
+                if (item && usuario) {
+                    item.emprestar(usuario);
+                } else {
+                    console.log("Item ou usuário não encontrado.");
+                }
+            }
+
+            devolverItem(codigo) {
+                const item = this.acervo.find(item => item.codigo === codigo);
+
+                if (item) {
+                    item.devolver();
+                } else {
+                    console.log("Item não encontrado.");
+                }
+            }
+        }
+
+        const livro1 = new Livro("Sherlock Holmes", "Arthur Conan Doyle", 1887, "L001", "Aventura");
+        const revista1 = new Revista("Códigos GTA SA", "Editora Amanco", 2005, "R001");
+        const usuario1 = new Usuario("Felipe", "RA001", "1990-01-15");
+
+        const biblioteca = new Biblioteca();
+
+        biblioteca.adicionarItem(livro1);
+        biblioteca.adicionarItem(revista1);
+        biblioteca.adicionarUsuario(usuario1);
+
+        biblioteca.listarAcervo();
+
+        biblioteca.emprestarItem("L001", "RA001");
+        biblioteca.listarAcervo();
+
+        biblioteca.devolverItem("L001");
+        biblioteca.listarAcervo();
+    </script>
+
+</body>
+
+</html>
